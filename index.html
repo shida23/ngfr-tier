@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乃木フラ用Tier表作成ツール</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://use.fontawesome.com/releases/v6.5.2/css/all.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G7N0DKFVGE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-G7N0DKFVGE');
+    </script>
+</head>
+<body>
+    <details class="accordion">
+        <summary><i class="fa-solid fa-gear"></i>メンバー表示設定</summary>
+        <div class="filter-container">
+            <p class="filter-title">チェックを外すと除外されます</p>
+                <div class="checkbox-container">        
+                    <p>レアリティ</p>
+                    <div class="checkbox-group rarity">
+                       <label><input type="checkbox" id="LR" checked>LR</label>
+                        <label><input type="checkbox" id="UR" checked>UR</label>
+                        <label><input type="checkbox" id="SSR" checked>SSR</label>
+                        <label><input type="checkbox" id="SR" checked>SR</label>
+                    </div>
+                </div>
+                <div class="checkbox-container">
+                    <p>期別</p>
+                    <div class="checkbox-group generation">
+                        <label><input type="checkbox" id="3期生" checked>3期</label>
+                        <label><input type="checkbox" id="4期生" checked>4期</label>
+                        <label><input type="checkbox" id="5期生" checked>5期</label>
+                        <label><input type="checkbox" id="OG" checked>OG</label>
+                    </div>
+                </div>
+                <div class="checkbox-container">
+                    <p>タイプ</p>
+                    <div class="checkbox-group type">
+                        <label><input type="checkbox" id="努力" checked>努力</label>
+                        <label><input type="checkbox" id="感謝" checked>感謝</label>
+                        <label><input type="checkbox" id="笑顔" checked>笑顔</label>
+                    </div>
+                </div>
+                <div class="checkbox-container">
+                    <p>形態</p>
+                    <div class="checkbox-group start">
+                        <label><input type="checkbox" id="α" checked>α</label>
+                        <label><input type="checkbox" id="β" checked>β</label>
+                        <label><input type="checkbox" id="γ" checked>γ</label>
+                        <label><input type="checkbox" id="δ" checked>δ</label>
+                        <label><input type="checkbox" id="ε" checked>ε</label>
+                        <label><input type="checkbox" id="ε1" checked>ε1</label>
+                        <label><input type="checkbox" id="ε2" checked>ε2</label>
+                        <label><input type="checkbox" id="ε3" checked>ε3</label>
+                        <label><input type="checkbox" id="バスラ" checked>バスラ</label>
+                        <label><input type="checkbox" id="センター" checked>センター</label>
+                    </div>
+                </div>
+            <button id="filter-btn">決定</button>
+        </div>
+    </details>
+
+    <div class="tier-list">
+        <div class="tier s">
+            <span>S</span>
+        </div>
+        <div class="tier a">
+            <span>A</span>
+        </div>
+        <div class="tier b">
+            <span>B</span>
+        </div>
+        <div class="tier c">
+            <span>C</span>
+        </div>
+        <div class="tier d">
+            <span>D</span>
+        </div>
+    </div>
+    
+    <div class="image-area"></div>
+
+    <footer>
+        <p>最終更新日：2024/12/28</p>
+        <p>スマートフォンで開いている方へ<br>
+        画像一覧の箇所をスクロールする際は灰色の部分をスワイプしてください</p>
+        <details class="accordion">
+            <summary>補足</summary>
+            <p>期別順(3→4→5→OG)に並んでおり、その中で<br>
+               形態別順{α→β→γ→δ→ε(1→2→3)}になっています<br>
+               卒業対応はアンコールガチャが始まった時点でOG枠に移動しています
+            </p>
+            <ul>  
+                <li>α：NOGIスタート</li>
+                <li>β：(1～4期)SRスタート</li>
+                <li>γ：(1～4期)Rスタート</li>
+                <li>δ：(1～4期)URスタート</li>
+                <li>ε：(3,4期)SSRスタート</li>
+            </ul>
+            <ul>
+                <li>ε1：5期SSRスタート1巡目</li>
+                <li>ε2：5期SSRスタート2巡目</li>
+                <li>ε3：5期SSRスタート3巡目</li>
+            </ul> 
+            <div class="twitter">誤記・不具合等の連絡先はこちら
+                <a href="https://x.com/shida_23_" target="_blank">
+                  <i class="fa-brands fa-x-twitter"></i>(
+                  <i class="fa-brands fa-twitter"></i>)
+                </a>へ
+            </div>
+            <p class="link">他制作物：
+                <a href="https://shida23.github.io/ngfr-rankexp/" target="_blank">
+                    乃木フラ平均経験値確認ツール
+                </a>
+            </p>
+        </details>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
