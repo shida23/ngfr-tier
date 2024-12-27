@@ -2,16 +2,17 @@
 
 ---
 
-## URL　なおし
+## URL
 
 https://shida23.github.io/ngfr-tier/
 
 ---
 
 ## 問い合わせ先
+
 [𝕏(旧Twitter)アカウント](https://x.com/shida_23_)
 
-誤記、不具合、要望などはこちらへお願いします。
+誤記、不具合などはこちらへお願いします。
 
 ---
 
